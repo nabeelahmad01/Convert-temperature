@@ -1,0 +1,18 @@
+import 'dart:io';
+void main() {
+var r;
+	print("Enter temperater");
+  var temp=int.parse(stdin.readLineSync()!);
+  print("1:celsius to fahrenheit");
+  print("2:fahrenheit to celcius");
+  print("Select Option"); 
+  var op=int.parse(stdin.readLineSync()!);
+if(op==1){
+  r=9/5*temp+32;
+  print("$r");
+}
+else{
+r=5/9*(temp-32);
+print("$r");
+};
+}
